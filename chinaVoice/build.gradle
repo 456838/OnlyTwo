@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.salton123.chinavoice"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//configurations.all {
+//    resolutionStrategy {
+//        force 'com.android.support:support-v4:24.0.0'
+//        force 'com.android.support:support-annotations:24.0.0'
+//        force 'com.android.support:appcompat-v7:24.0.0'
+//        force 'com.android.support:design:25.0.0'
+//        force 'com.android.support:recyclerview-v7:25.0.0'
+//        force 'com.android.support:cardview-v7:25.0.0'
+//        force 'com.android.support:design:25.0.0'
+//
+//    }
+//}
+
+configurations {
+//    all*.exclude group: 'org.jboss.logging'
+//    compile.exclude module: 'support-fragment'
+}
+
+// 这个plugin需要放在android配置之后，因为需要读取android中的配置项
+apply plugin: 'replugin-plugin-gradle'
+dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.salton123:saltonFramework:${saltonframework_version}"
+    compile 'fm.jiecao:jiecaovideoplayer:5.6'
+    compile 'com.qihoo360.replugin:replugin-plugin-lib:2.1.5'
+//        provided files('libs/fragment.jar')//这个jar就是从Support-fragment中提取出来的并非特制包目的是为了骗过编译期
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.duowan.onlyone.view.widget.DoubleLayout
+            android:id="@+id/double_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="#ff000000">
+
+            <com.duowan.mobile.mediaproxy.YVideoViewLayout
+                android:id="@+id/yvLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff000000"
+                android:baselineAligned="false"
+                android:orientation="horizontal"></com.duowan.mobile.mediaproxy.YVideoViewLayout>
+
+            <com.duowan.mobile.mediaproxy.YVideoViewLayout
+                android:id="@+id/yvLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#ff000000"
+                android:baselineAligned="false"
+                android:orientation="horizontal"></com.duowan.mobile.mediaproxy.YVideoViewLayout>
+        </com.duowan.onlyone.view.widget.DoubleLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="bottom|right"
+        android:id="@+id/btn_change_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jc_enlarge"
+        android:layout_margin="16dp"
+        app:backgroundTint="#99000000"
+        app:rippleColor="#33728dff"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        />
+</FrameLayout>

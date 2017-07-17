@@ -1,0 +1,10 @@
+当前路径：H:\workspace\OnlyOne
+日志路径：H:\workspace\OnlyOne\cleanlog.txt
+清理目录：H:\workspace\OnlyOne\app\build	 result:true
+清理目录：H:\workspace\OnlyOne\build	 result:true
+清理目录：H:\workspace\OnlyOne\chinaVoice\build	 result:true
+清理目录：H:\workspace\OnlyOne\saltonFramework\build	 result:true
+清理目录：H:\workspace\OnlyOne\yylive\build	 result:true
+清理目录：H:\workspace\OnlyOne\yyliveshow\build	 result:true
+当前路径：H:\workspace\OnlyOne
+日志路径：H:\workspace\OnlyOne\cleanlog.txt
